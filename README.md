@@ -57,4 +57,4 @@ The third attempt at increasing the model performance was unsuccessful, achievin
 
 ## Summary
 
-
+Overall, the model was unsuccessful in achieving the 75% target predictive accuracy. With an initial accuracy of 73%, my three attempts to optimize the model to reach the target predictive accuracy were unsuccessful and actually decreased performance by a percentage to about 72%.
