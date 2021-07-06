@@ -15,7 +15,7 @@ The purpose of this analysis was to create a binary classifier that is capable o
 
 ### Compiling, Training, and Evaluating the Model
 
-- For the first run of the model, I chose two hidden layers with the first hidden layer having 80 nodes and the second layer having 30 nodes. Both hidden layers had a ReLu activation function and the output layer had a sigmoid activation function. I chose two hidden layers because I did not want to overfit the model and I chose 110 total nodes because the general rule of thumb for a simple model is to use 2-3 times as many nodes as there are inputs. After encoding the string datatypes into numbers which could be passed into the neural network, there were 44 inputs and 110 nodes fits nicely between 2-3 times the 44 inputs. I chose the ReLu activation function for the hidden layers because it identifies nonlinear characteristics from the input values. I chose the sigmoid activation function for the output layer as the sigmoid function is ideal for binary classification since its values are normalized to a probablility between 0 and 1.
+- For the first run of the model, I chose two hidden layers with the first hidden layer having 80 nodes and the second layer having 30 nodes. Both hidden layers had a ReLU activation function and the output layer had a sigmoid activation function. I chose two hidden layers because I did not want to overfit the model and I chose 110 total nodes because the general rule of thumb for a simple model is to use 2-3 times as many nodes as there are inputs. After encoding the string datatypes into numbers which could be passed into the neural network, there were 44 inputs and 110 nodes fits nicely between 2-3 times the 44 inputs. I chose the ReLU activation function for the hidden layers because it identifies nonlinear characteristics from the input values. I chose the sigmoid activation function for the output layer as the sigmoid function is ideal for binary classification since its values are normalized to a probablility between 0 and 1.
 
 ![Details](Resources/details.PNG)
 
@@ -43,6 +43,18 @@ In my second attempt, I added additional hidden layers and additional nodes to t
 
 The second attempt at increasing the model performance was unsuccessful, achieving a predictive accuracy again of about 72%.
 
+![Attempt 2 Accuracy](Resources/attempt2_accuracy.PNG)
+
 #### Attempt 3
 
-In my third attempt, I changed the activation function of the hidden layers from ReLu to tanh. 
+In my third attempt, I changed the activation function of the hidden layers from ReLU to Leaky ReLU. I chose Leaky ReLU as it was a good nonlinear alternative to the ReLU function. Also, generally when optimizing models, it is better to select from activation functions that are slightly more complex so the sigmoid or tanh functions may not be the best choices.
+
+![Attempt 3](Resources/attempt3.PNG)
+
+The third attempt at increasing the model performance was unsuccessful, achieving a predictive accuracy of just under 72%.
+
+![Attempt 3 Accuracy](Resources/attempt3_accuracy.PNG)
+
+## Summary
+
+
