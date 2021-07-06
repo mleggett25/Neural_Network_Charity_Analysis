@@ -29,4 +29,4 @@ The purpose of this analysis was to create a binary classifier that is capable o
 
 ![Attempt 1](Resources/Attempt1.PNG)
 
-In my first attempt, I noticed that the ASK_AMT variable had a lot of unique values so I attempted to bucket the data by creating categorical values and reassigning the data points to new corresponding values.
+In my first attempt, I noticed that the ASK_AMT variable had a lot of unique values so I attempted to bucket the data by creating categorical values and reassigning the data points to new corresponding values. As seen in the screenshot, there were many different values ranging from 5000 to over 8 billion. Based on the median of 5000, I created five buckets which I felt distributed the values as best as possible.
