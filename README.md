@@ -15,4 +15,4 @@ The purpose of this analysis was to create a binary classifier that is capable o
 
 ### Compiling, Training, and Evaluating the Model
 
-- 
+- For the first run of the model, I chose two hidden layers with the first hidden layer having 80 nodes and the second layer having 30 nodes. Both hidden layers had a ReLu activation function and the output layer had a sigmoid activation function. I chose two hidden layers because I did not want to overfit the model and I chose 110 total nodes because the general rule of thumb for a simple model is to use 2-3 times as many nodes as there are inputs. After encoding the string datatypes into numbers which could be passed into the neural network, there were 44 inputs and 110 nodes fits nicely between 2-3 times the 44 inputs. I chose the ReLu activation function for the hidden layers because it identifies nonlinear characteristics from the input values. I chose the sigmoid activation function for the output layer as 
