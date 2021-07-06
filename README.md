@@ -19,4 +19,14 @@ The purpose of this analysis was to create a binary classifier that is capable o
 
 ![Details](Resources/details.PNG)
 
-- After the first run of the model, I achieved a predictive accuracy of 73%, which is lower than target predictive accuarcy of 75%.
+- After the first run of the model, I achieved a predictive accuracy of 73%, which is lower than the target predictive accuarcy of 75%.
+
+![Accuracy](Resources/accuracy.PNG)
+
+- I made three attempts to increase the model performance:
+
+#### Attempt 1
+
+![Attempt 1](Resources/Attempt1.PNG)
+
+In my first attempt, I noticed that the ASK_AMT variable had a lot of unique values so I attempted to bucket the data by creating categorical values and reassigning the data points to new corresponding values.
